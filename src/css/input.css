@@ -49,3 +49,27 @@ body {
 		@apply overflow-hidden text-ellipsis;
 	}
 }
+
+@layer components {
+	.completed-grid {
+		@apply grid grid-cols-3 grid-rows-2 gap-4 pt-8;
+	}
+	.completed-grid-container {
+		@apply overflow-hidden;
+	}
+	.completed-items {
+		@apply relative rounded-md overflow-hidden;
+	}
+	.completed-episode {
+		@apply bg-red-400 text-[8px] px-2 py-0.5 shadow-md rounded-r-md top-4 absolute z-10;
+	}
+	.completed-episode-p {
+		@apply font-bold text-white;
+	}
+	.completed-title {
+		@apply text-xs pt-2 font-bold text-dark h-auto;
+	}
+	.completed-title-p {
+		@apply overflow-hidden text-ellipsis;
+	}
+}
