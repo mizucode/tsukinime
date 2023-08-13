@@ -31,43 +31,60 @@
 	<body>
 		<header
 			style="background-image: url('../img/background.webp')"
-			class="bg-no-repeat bg-cover bg-center"
+			class="bg-no-repeat bg-cover bg-center lg:h-screen"
 		>
-			<div class="container pt-4 bg-black bg-opacity-75">
-				<nav class="flex items-center justify-between text-white">
-					<div class="flex gap-2">
-						<menu
-							><i
-								class="fa-solid fa-bars font-bold text-xl"
-								id="hamburger-open"
-							></i
-						></menu>
-						<a href="#" class="text-orange font-bold text-xl"
-							>Tsukinime<span class="text-white">.net</span></a
-						>
-					</div>
-					<a href="#" class="text-sm">SIGN IN</a>
+			<div class="bg-black bg-opacity-75 lg:h-screen">
+				<nav
+					class="hidden lg:flex justify-between items-center text-dark px-4 bg-white"
+				>
+					<a href="#">Tsukinime.net</a>
+					<ul class="flex gap-4">
+						<li>Menu1</li>
+						<li>Menu1</li>
+						<li>Menu1</li>
+						<li>Menu1</li>
+					</ul>
 				</nav>
+				<div class="container pt-4">
+					<!-- Nav Mobile -->
+					<nav class="flex items-center justify-between text-white lg:hidden">
+						<div class="flex gap-2">
+							<menu
+								><i
+									class="fa-solid fa-bars font-bold text-xl"
+									id="hamburger-open"
+								></i
+							></menu>
+							<a href="#" class="text-orange font-bold text-xl"
+								>Tsukinime<span class="text-white">.net</span></a
+							>
+						</div>
+						<a href="#" class="text-sm">SIGN IN</a>
+					</nav>
+					<!-- End Nav Mobile -->
 
-				<section class="py-16 flex justify-between">
-					<main class="text-white">
-						<h1 class="font-bold text-2xl">
-							Tonton anime favoritmu di
-							<span class="text-orange">Tsukinime</span>
-						</h1>
-						<p class="text-sm py-2 pb-4">
-							Fanshare Download Anime Sub Indo Terlengkap dan Terbaru dalam
-							Format Mkv (480p & 720p) dan Mp4 (240p & 360p) + BATCH dengan link
-							Google Drive.
-						</p>
+					<section class="py-16 flex justify-between lg:text-center lg:pt-48">
+						<main class="text-white">
+							<h1 class="font-bold text-2xl lg:text-4xl">
+								Tonton anime favoritmu di
+								<span class="text-orange">Tsukinime</span>
+							</h1>
+							<p
+								class="text-sm py-2 lg:py-8 pb-4 lg:mx-auto lg:w-2/4 lg:text-2xl"
+							>
+								Fanshare Download Anime Sub Indo Terlengkap dan Terbaru dalam
+								Format Mkv (480p & 720p) dan Mp4 (240p & 360p) + BATCH dengan
+								link Google Drive.
+							</p>
 
-						<a
-							href="#"
-							class="bg-orange hover:bg-dark px-4 py-2 pt-2 rounded-sm"
-							>SIGN IN</a
-						>
-					</main>
-				</section>
+							<a
+								href="#"
+								class="bg-orange hover:bg-dark px-4 py-2 pt-2 lg:text-2xl rounded-sm"
+								>SIGN IN</a
+							>
+						</main>
+					</section>
+				</div>
 			</div>
 
 			<nav
