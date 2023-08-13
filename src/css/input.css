@@ -28,7 +28,7 @@ body {
 
 @layer components {
 	.ongoing-grid {
-		@apply grid grid-cols-3 grid-rows-2 gap-4 pt-8;
+		@apply grid grid-cols-3 grid-rows-2 gap-4 pt-4;
 	}
 	.ongoing-grid-container {
 		@apply overflow-hidden;
@@ -52,7 +52,7 @@ body {
 
 @layer components {
 	.completed-grid {
-		@apply grid grid-cols-3 grid-rows-2 gap-4 pt-8;
+		@apply grid grid-cols-3 grid-rows-2 gap-4 pt-4;
 	}
 	.completed-grid-container {
 		@apply overflow-hidden;
@@ -71,5 +71,32 @@ body {
 	}
 	.completed-title-p {
 		@apply overflow-hidden text-ellipsis;
+	}
+}
+
+@layer components {
+	.movie-grid {
+		@apply grid grid-cols-2  gap-4 pt-4;
+	}
+	.movie-episode {
+		@apply bg-blue-400 text-[8px] px-2 py-0.5 shadow-md rounded-r-md top-4 absolute z-10;
+	}
+	.movie-episode-p {
+		@apply font-bold text-white text-base;
+	}
+	.movie-title {
+		@apply text-base pt-2 font-bold text-dark h-auto;
+	}
+	.movie-title-p {
+		@apply overflow-hidden text-ellipsis;
+	}
+}
+
+@layer components {
+	.completednew-episode {
+		@apply bg-orange text-[8px] px-2 py-0.5 shadow-md rounded-r-md top-4 absolute z-10;
+	}
+	.completednew-episode-p {
+		@apply font-bold text-white;
 	}
 }
