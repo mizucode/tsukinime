@@ -36,7 +36,12 @@
 			<div class="container pt-4 bg-black bg-opacity-75">
 				<nav class="flex items-center justify-between text-white">
 					<div class="flex gap-2">
-						<menu><i class="fa-solid fa-bars font-bold text-xl"></i></menu>
+						<menu
+							><i
+								class="fa-solid fa-bars font-bold text-xl"
+								id="hamburger-open"
+							></i
+						></menu>
 						<a href="#" class="text-orange font-bold text-xl"
 							>Tsukinime<span class="text-white">.net</span></a
 						>
@@ -64,6 +69,58 @@
 					</main>
 				</section>
 			</div>
+
+			<nav
+				class="absolute nonactive bg-white shadow-md w-full transition-all duration-300 z-50"
+				id="navbar-menu"
+			>
+				<div class="container pt-4">
+					<nav class="flex items-center justify-between text-dark">
+						<div class="flex gap-2">
+							<menu
+								><i
+									class="fa-solid fa-bars font-bold text-xl"
+									id="hamburger-close"
+								></i
+							></menu>
+							<a href="#" class="text-orange font-bold text-xl"
+								>Tsukinime<span class="text-dark">.net</span></a
+							>
+						</div>
+						<a href="#" class="text-sm">SIGN IN</a>
+					</nav>
+				</div>
+				<div class="w-full h-1 mt-4 bg-orange"></div>
+
+				<div class="container py-6">
+					<ul class="flex flex-wrap gap-3">
+						<li class="list-menu menu-active">
+							<a href="../" class="w-full h-full block">Beranda</a>
+						</li>
+						<li class="list-menu">
+							<a href="../" class="w-full h-full block">Cari Anime</a>
+						</li>
+						<li class="list-menu">
+							<a href="../" class="w-full h-full block">Daftar Anime</a>
+						</li>
+						<li class="list-menu">
+							<a href="../" class="w-full h-full block">Genres</a>
+						</li>
+						<li class="list-menu">
+							<a href="../" class="w-full h-full block">Bookmark</a>
+						</li>
+						<li class="list-menu">
+							<a href="../" class="w-full h-full block">Jadwal Rilis Ongoing</a>
+						</li>
+						<li class="list-menu">
+							<a href="../" class="w-full h-full block">FAQ</a>
+						</li>
+						<li class="list-menu">
+							<a href="../" class="w-full h-full block">Kontak</a>
+						</li>
+					</ul>
+				</div>
+			</nav>
 		</header>
 
 		<section class="my-8">
@@ -77,27 +134,25 @@
 				<div class="swiper">
 					<div class="swiper-wrapper">
 						<div class="swiper-slide">
-							<div class="mt-2">
-								<h1 class="text-center font-bold text-orange text-xl">Senin</h1>
+							<div class="mt-4">
+								<h1 class="font-semibold -z-10 text-dark text-xl">Senin</h1>
 							</div>
 							<div class="ongoing-grid">
-								<a href="/jujustu" class="ongoing-grid-container">
+								<a href="#" class="ongoing-grid-container">
 									<div class="ongoing-items">
 										<div class="ongoing-episode">
 											<p class="ongoing-episode-p">Episode 5</p>
 										</div>
 										<div class="w-full h-full">
 											<img
-												src="https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx146065-1hTpwsW2fQIA.jpg"
+												src="https://u.livechart.me/anime/11115/poster_image/c972ab2d4efec6743bd89203644dadf5.webp/small.jpg"
 												alt=""
 												class="w-full h-full bg-cover"
 											/>
 										</div>
 									</div>
 									<div class="ongoing-title">
-										<p class="ongoing-title-p">
-											Jujustu kaisen s2sdadwaddwdawdawdawdawd
-										</p>
+										<p class="ongoing-title-p">Mushoku Tensei Season 2</p>
 									</div>
 								</a>
 								<a href="/jujustu" class="ongoing-grid-container">
@@ -114,9 +169,7 @@
 										</div>
 									</div>
 									<div class="ongoing-title">
-										<p class="ongoing-title-p">
-											Jujustu kaisen s2sdadwaddwdawdawdawdawd
-										</p>
+										<p class="ongoing-title-p">Tok Dalang Gir 5</p>
 									</div>
 								</a>
 								<a href="/jujustu" class="ongoing-grid-container">
@@ -133,9 +186,7 @@
 										</div>
 									</div>
 									<div class="ongoing-title">
-										<p class="ongoing-title-p">
-											Jujustu kaisen s2sdadwaddwdawdawdawdawd
-										</p>
+										<p class="ongoing-title-p">Jujur Kasian Part 2</p>
 									</div>
 								</a>
 								<a href="/jujustu" class="ongoing-grid-container">
@@ -198,10 +249,10 @@
 							</div>
 						</div>
 						<div class="swiper-slide">
-							<div class="mt-2">
-								<h1 class="text-center font-bold text-orange text-xl">
-									Selasa
-								</h1>
+							<div class="mt-4">
+								<div class="mt-4">
+									<h1 class="font-semibold text-dark text-xl">Selasa</h1>
+								</div>
 							</div>
 							<div class="ongoing-grid">
 								<a href="/jujustu" class="ongoing-grid-container">
@@ -596,7 +647,7 @@
 			</div>
 		</section>
 
-		<section class="my-12">
+		<section class="my-14">
 			<div class="container">
 				<h1 class="text-center text-white text-2xl font-bold">
 					<i class="fa-solid fa-mug-saucer text-orange"></i>
@@ -787,6 +838,45 @@
 				</div>
 			</div>
 		</section>
+
+		<footer class="mt-14 w-full bg-dark relative">
+			<div class="container">
+				<main class="pt-4 pb-16">
+					<h1 class="text-2xl text-orange font-bold">Diclaimer</h1>
+					<p class="font-bold text-white text-[12px] pt-2">
+						Mohon diperhatikan bahwa project yang dibuat hanya merupakan latihan
+						skills dan tidak dimaksudkan untuk tujuan komersial atau penggunaan
+						di luar lingkup akademis. Segala risiko yang timbul akibat
+						penggunaan informasi dari project ini sepenuhnya menjadi tanggung
+						jawab pengguna. Terima kasih.
+					</p>
+				</main>
+			</div>
+			<div class="absolute w-full h-10 bottom-0 bg-[#D9D9D9] rounded-t-3xl">
+				<h1 class="text-center text-dark py-2">Created With 💖 Mizucode</h1>
+			</div>
+		</footer>
+
+		<script>
+			const navbarNav = document.querySelector("#navbar-menu");
+			const hamburgerOpen = document.querySelector("#hamburger-open");
+			const hamburgerClose = document.querySelector("#hamburger-close");
+			const overlay = document.querySelector("#overlay");
+
+			console.log(hamburgerOpen);
+
+			const toggleMenu = () => {
+				hamburgerOpen.classList.toggle("active");
+				hamburgerOpen.classList.toggle("nonactive");
+				navbarNav.classList.toggle("active");
+				navbarNav.classList.toggle("nonactive");
+				overlay.classList.toggle("block");
+				overlay.classList.toggle("hidden");
+			};
+
+			hamburgerOpen.addEventListener("click", toggleMenu);
+			hamburgerClose.addEventListener("click", toggleMenu);
+		</script>
 
 		<script>
 			const swiper = new Swiper(".swiper", {

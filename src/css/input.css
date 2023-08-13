@@ -6,21 +6,6 @@ body {
 @tailwind utilities;
 
 @layer components {
-	.flex-between {
-		@apply flex justify-between items-center;
-	}
-	.list-menu {
-		@apply w-full bg-white rounded-md px-2 font-semibold text-main text-xl py-1 cursor-pointer hover:bg-main-ungu hover:text-white;
-	}
-	.menu-active {
-		@apply bg-main-ungu text-white;
-	}
-	.nonactive {
-		@apply -top-80;
-	}
-	.active {
-		@apply -top-0;
-	}
 	.swiper-slider {
 		@apply flex gap-4;
 	}
@@ -43,7 +28,7 @@ body {
 		@apply font-bold text-white;
 	}
 	.ongoing-title {
-		@apply text-xs pt-2 font-bold text-dark h-auto;
+		@apply text-xs pt-2 font-bold text-dark h-12;
 	}
 	.ongoing-title-p {
 		@apply overflow-hidden text-ellipsis;
@@ -98,5 +83,23 @@ body {
 	}
 	.completednew-episode-p {
 		@apply font-bold text-white;
+	}
+}
+
+@layer components {
+	.flex-between {
+		@apply flex justify-between items-center;
+	}
+	.list-menu {
+		@apply w-full bg-main-abu rounded-md px-2 font-semibold text-dark text-xl py-1 cursor-pointer hover:bg-orange hover:text-white;
+	}
+	.menu-active {
+		@apply bg-orange text-white;
+	}
+	.nonactive {
+		@apply -top-[35rem];
+	}
+	.active {
+		@apply -top-0;
 	}
 }

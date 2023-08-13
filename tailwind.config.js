@@ -12,6 +12,7 @@ module.exports = {
 			},
 			colors: {
 				main: "#F4F4F4",
+				"main-abu": "#F1F1F1",
 				dasar: "#FF78C4",
 				dark: "#292929",
 				orange: "#FF7A00",
