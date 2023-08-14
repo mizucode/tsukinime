@@ -975,6 +975,12 @@ body {
   background-color: rgb(255 122 0 / var(--tw-bg-opacity));
 }
 
+@media (min-width: 1024px) {
+  .detail-episode {
+    display: flex;
+  }
+}
+
 .detail-episode-icon {
   display: flex;
   height: 3rem;
@@ -1007,10 +1013,6 @@ body {
 
 .bottom-0 {
   bottom: 0px;
-}
-
-.top-0 {
-  top: 0px;
 }
 
 .-z-50 {
@@ -1240,6 +1242,11 @@ body {
      object-fit: cover;
 }
 
+.px-16 {
+  padding-left: 4rem;
+  padding-right: 4rem;
+}
+
 .px-4 {
   padding-left: 1rem;
   padding-right: 1rem;
@@ -1273,6 +1280,11 @@ body {
 .py-6 {
   padding-top: 1.5rem;
   padding-bottom: 1.5rem;
+}
+
+.px-24 {
+  padding-left: 6rem;
+  padding-right: 6rem;
 }
 
 .pb-16 {
@@ -1325,6 +1337,11 @@ body {
 
 .text-xl {
   font-size: 1.25rem;
+  line-height: 1.75rem;
+}
+
+.text-lg {
+  font-size: 1.125rem;
   line-height: 1.75rem;
 }
 
@@ -1443,6 +1460,11 @@ body {
 }
 
 @media (min-width: 1024px) {
+  .lg\:mx-0 {
+    margin-left: 0px;
+    margin-right: 0px;
+  }
+
   .lg\:mx-auto {
     margin-left: auto;
     margin-right: auto;
@@ -1453,6 +1475,14 @@ body {
     margin-bottom: 4rem;
   }
 
+  .lg\:-mt-64 {
+    margin-top: -16rem;
+  }
+
+  .lg\:ml-32 {
+    margin-left: 8rem;
+  }
+
   .lg\:flex {
     display: flex;
   }
@@ -1461,8 +1491,20 @@ body {
     display: none;
   }
 
+  .lg\:h-\[25rem\] {
+    height: 25rem;
+  }
+
+  .lg\:h-\[30rem\] {
+    height: 30rem;
+  }
+
   .lg\:w-2\/4 {
     width: 50%;
+  }
+
+  .lg\:w-\[20rem\] {
+    width: 20rem;
   }
 
   .lg\:pt-44 {

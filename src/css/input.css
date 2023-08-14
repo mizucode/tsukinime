@@ -122,7 +122,7 @@ body {
 		@apply py-4 flex flex-col gap-3;
 	}
 	.detail-episode {
-		@apply relative bg-dark hover:bg-orange w-full h-16 rounded-lg flex items-center gap-4 px-2;
+		@apply relative lg:flex bg-dark hover:bg-orange w-full h-16 rounded-lg flex items-center gap-4 px-2;
 	}
 	.detail-episode-icon {
 		@apply bg-detail-icon w-12 h-12 rounded-lg flex justify-center items-center;

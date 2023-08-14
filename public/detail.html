@@ -30,8 +30,41 @@
 	</head>
 	<body>
 		<header class="bg-main shadow-md">
-			<div class="container py-4">
-				<nav class="flex items-center justify-between text-dark lg:hidden">
+			<nav
+				class="hidden lg:flex justify-between items-center text-dark px-8 py-4 border-b-2 border-orange bg-white"
+			>
+				<a href="#" class="text-2xl font-bold"
+					><span class="text-orange">Tsukinime</span>.net</a
+				>
+				<ul class="flex gap-4">
+					<li class="list-menu-desktop menu-active-desktop">
+						<a href="../" class="w-full h-full block">Beranda</a>
+					</li>
+					<li class="list-menu-desktop">
+						<a href="../" class="w-full h-full block">Cari Anime</a>
+					</li>
+					<li class="list-menu-desktop">
+						<a href="../" class="w-full h-full block">Daftar Anime</a>
+					</li>
+					<li class="list-menu-desktop">
+						<a href="../" class="w-full h-full block">Genres</a>
+					</li>
+					<li class="list-menu-desktop">
+						<a href="../" class="w-full h-full block">Bookmark</a>
+					</li>
+					<li class="list-menu-desktop">
+						<a href="../" class="w-full h-full block">Jadwal Rilis Ongoing</a>
+					</li>
+					<li class="list-menu-desktop">
+						<a href="../" class="w-full h-full block">FAQ</a>
+					</li>
+					<li class="list-menu-desktop">
+						<a href="../" class="w-full h-full block">Kontak</a>
+					</li>
+				</ul>
+			</nav>
+			<div class="container py-4 lg:hidden">
+				<nav class="flex items-center justify-between text-dark">
 					<div class="flex gap-2">
 						<menu
 							><i
@@ -47,7 +80,7 @@
 				</nav>
 			</div>
 			<nav
-				class="absolute nonactive bg-white shadow-md w-full transition-all duration-300 z-50"
+				class="absolute nonactive bg-white shadow-md w-full transition-all duration-300 z-50 lg:hidden"
 				id="navbar-menu"
 			>
 				<div class="container pt-4">
@@ -99,7 +132,7 @@
 			</nav>
 		</header>
 
-		<section class="w-full h-48 overflow-hidden relative -z-50">
+		<section class="w-full h-48 lg:h-[25rem] overflow-hidden relative -z-50">
 			<img
 				src="https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx145064-5fa4ZBbW4dqA.jpg"
 				alt=""
@@ -107,239 +140,387 @@
 			/>
 		</section>
 
-		<section
-			class="w-40 h-60 overflow-hidden rounded-md shadow-md mx-auto -mt-32"
-		>
-			<img
-				src="https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx145064-5fa4ZBbW4dqA.jpg"
-				alt=""
-				class="w-full h-full object-cover"
-			/>
-		</section>
+		<!-- Android view -->
+		<div class="lg:hidden">
+			<section
+				class="w-40 lg:w-[20rem] lg:flex h-60 lg:h-[30rem] overflow-hidden rounded-md shadow-md mx-auto lg:mx-0 lg:ml-32 -mt-32 lg:-mt-64"
+			>
+				<img
+					src="https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx145064-5fa4ZBbW4dqA.jpg"
+					alt=""
+					class="w-full h-full object-cover"
+				/>
+			</section>
 
-		<div class="container">
-			<h1 class="text-dark text-center font-bold py-5 text-2xl">
-				Sialan di anime tidak begitu
-			</h1>
-		</div>
-
-		<section class="py-4">
 			<div class="container">
-				<div class="flex flex-col gap-4">
-					<div class="flex justify-center items-center font-bold">
-						<div class="detail-dua-bar bg-dark rounded-l-full">
-							<p>Episode 5</p>
-						</div>
-						<div class="detail-dua-bar rounded-r-full">
-							<p class="text-center">On Going</p>
-						</div>
-					</div>
-					<div class="flex justify-center items-center font-bold">
-						<div
-							class="detail-dua-bar bg-main-detail-abu rounded-full flex justify-center gap-2 items-center"
-						>
-							<i class="fa-solid fa-star text-orange"></i>
-							<p>9.0</p>
-						</div>
-					</div>
-					<div class="flex justify-center items-center font-bold">
-						<div
-							class="detail-dua-bar bg-merah rounded-full flex justify-center gap-2 items-center"
-						>
-							<p>Bookmark</p>
-						</div>
-					</div>
-				</div>
-			</div>
-		</section>
-
-		<section class="py-4">
-			<div class="container">
-				<div class="w-full h-auto bg-white rounded-md">
-					<ul class="px-4 py-4 flex flex-col gap-4">
-						<li class="text-dark">
-							<h2 class="font-bold text-base">Judul Alternative</h2>
-							<p class="font-semibold text-sm opacity-75">Jujustu Kaisen</p>
-						</li>
-						<li class="text-dark">
-							<h2 class="font-bold text-base">Jumlah Episode</h2>
-							<p class="font-semibold text-sm opacity-75">24</p>
-						</li>
-						<li class="text-dark">
-							<h2 class="font-bold text-base">Tanggal Tayang</h2>
-							<p class="font-semibold text-sm opacity-75">Jul 6, 2023 to ?</p>
-						</li>
-						<li class="text-dark">
-							<h2 class="font-bold text-base">Studio Yang Memproduksi</h2>
-							<p class="font-semibold text-sm opacity-75">MAPPA</p>
-						</li>
-						<li class="text-dark">
-							<h2 class="font-bold text-base">Durasi per Episode</h2>
-							<p class="font-semibold text-sm opacity-75">24 Min.</p>
-						</li>
-						<li class="text-dark">
-							<h2 class="font-bold text-base">Credit</h2>
-							<p class="font-semibold text-sm opacity-75">Oploverz</p>
-						</li>
-					</ul>
-				</div>
-			</div>
-		</section>
-
-		<section class="py-4">
-			<div class="container">
-				<div class="w-full flex flex-wrap gap-2 items-center">
-					<a
-						href="#"
-						class="px-4 py-2 font-semibold text-white text-base bg-red-500 rounded-md hover:bg-dark"
-						>Action</a
-					>
-					<a
-						href="#"
-						class="px-4 py-2 font-semibold text-white text-base bg-red-500 rounded-md hover:bg-dark"
-						>Fantasy</a
-					>
-				</div>
-			</div>
-		</section>
-
-		<section class="py-4">
-			<div class="container">
-				<div class="w-full flex flex-wrap gap-2 items-center">
-					<p class="font-medium text-dark">
-						Anime ini akan menceritakan Satoru Gojou dan Suguru Getou saat masih
-						sekolah. Perpisahan masa lalu antara Gojou dan Getou dalam film
-						terakhirnya akhirnya terungkap.Seri Jujutsu Kaisen berlanjut di
-						musim kedua.
-					</p>
-				</div>
-			</div>
-		</section>
-
-		<section class="py-4">
-			<div class="container">
-				<h1 class="text-4xl font-bold text-dark">
-					<span class="text-orange">Episode</span> List
+				<h1 class="text-dark text-center font-bold py-5 text-2xl">
+					Sialan di anime tidak begitu
 				</h1>
+			</div>
 
-				<div class="container-detail-episode">
-					<div class="detail-episode">
-						<div class="detail-episode-icon">
-							<svg
-								xmlns="http://www.w3.org/2000/svg"
-								width="40"
-								height="40"
-								viewBox="0 0 24 24"
+			<section class="py-4">
+				<div class="container">
+					<div class="flex flex-col gap-4">
+						<div class="flex justify-center items-center font-bold">
+							<div class="detail-dua-bar bg-dark rounded-l-full">
+								<p>Episode 5</p>
+							</div>
+							<div class="detail-dua-bar rounded-r-full">
+								<p class="text-center">On Going</p>
+							</div>
+						</div>
+						<div class="flex justify-center items-center font-bold">
+							<div
+								class="detail-dua-bar bg-main-detail-abu rounded-full flex justify-center gap-2 items-center"
 							>
-								<path
-									fill="#ffdc84"
-									d="M8 21v-2H4q-.825 0-1.413-.588T2 17V5q0-.825.588-1.413T4 3h16q.825 0 1.413.588T22 5v12q0 .825-.588 1.413T20 19h-4v2H8Z"
-								/>
-							</svg>
+								<i class="fa-solid fa-star text-orange"></i>
+								<p>9.0</p>
+							</div>
 						</div>
-						<div class="detail-episode-title">
-							<h1 class="text-base">Episode 1</h1>
-							<h2 class="text-sm opacity-75">Agustus 2, 2023</h2>
-						</div>
-					</div>
-					<div class="detail-episode">
-						<div class="detail-episode-icon">
-							<svg
-								xmlns="http://www.w3.org/2000/svg"
-								width="40"
-								height="40"
-								viewBox="0 0 24 24"
+						<div class="flex justify-center items-center font-bold">
+							<div
+								class="detail-dua-bar bg-merah rounded-full flex justify-center gap-2 items-center"
 							>
-								<path
-									fill="#ffdc84"
-									d="M8 21v-2H4q-.825 0-1.413-.588T2 17V5q0-.825.588-1.413T4 3h16q.825 0 1.413.588T22 5v12q0 .825-.588 1.413T20 19h-4v2H8Z"
-								/>
-							</svg>
-						</div>
-						<div class="detail-episode-title">
-							<h1 class="text-base">Episode 1</h1>
-							<h2 class="text-sm opacity-75">Agustus 2, 2023</h2>
-						</div>
-					</div>
-					<div class="detail-episode">
-						<div class="detail-episode-icon">
-							<svg
-								xmlns="http://www.w3.org/2000/svg"
-								width="40"
-								height="40"
-								viewBox="0 0 24 24"
-							>
-								<path
-									fill="#ffdc84"
-									d="M8 21v-2H4q-.825 0-1.413-.588T2 17V5q0-.825.588-1.413T4 3h16q.825 0 1.413.588T22 5v12q0 .825-.588 1.413T20 19h-4v2H8Z"
-								/>
-							</svg>
-						</div>
-						<div class="detail-episode-title">
-							<h1 class="text-base">Episode 1</h1>
-							<h2 class="text-sm opacity-75">Agustus 2, 2023</h2>
-						</div>
-					</div>
-					<div class="detail-episode">
-						<div class="detail-episode-icon">
-							<svg
-								xmlns="http://www.w3.org/2000/svg"
-								width="40"
-								height="40"
-								viewBox="0 0 24 24"
-							>
-								<path
-									fill="#ffdc84"
-									d="M8 21v-2H4q-.825 0-1.413-.588T2 17V5q0-.825.588-1.413T4 3h16q.825 0 1.413.588T22 5v12q0 .825-.588 1.413T20 19h-4v2H8Z"
-								/>
-							</svg>
-						</div>
-						<div class="detail-episode-title">
-							<h1 class="text-base">Episode 1</h1>
-							<h2 class="text-sm opacity-75">Agustus 2, 2023</h2>
-						</div>
-					</div>
-					<div class="detail-episode">
-						<div class="detail-episode-icon">
-							<svg
-								xmlns="http://www.w3.org/2000/svg"
-								width="40"
-								height="40"
-								viewBox="0 0 24 24"
-							>
-								<path
-									fill="#ffdc84"
-									d="M8 21v-2H4q-.825 0-1.413-.588T2 17V5q0-.825.588-1.413T4 3h16q.825 0 1.413.588T22 5v12q0 .825-.588 1.413T20 19h-4v2H8Z"
-								/>
-							</svg>
-						</div>
-						<div class="detail-episode-title">
-							<h1 class="text-base">Episode 1</h1>
-							<h2 class="text-sm opacity-75">Agustus 2, 2023</h2>
-						</div>
-					</div>
-					<div class="detail-episode">
-						<div class="detail-episode-icon">
-							<svg
-								xmlns="http://www.w3.org/2000/svg"
-								width="40"
-								height="40"
-								viewBox="0 0 24 24"
-							>
-								<path
-									fill="#ffdc84"
-									d="M8 21v-2H4q-.825 0-1.413-.588T2 17V5q0-.825.588-1.413T4 3h16q.825 0 1.413.588T22 5v12q0 .825-.588 1.413T20 19h-4v2H8Z"
-								/>
-							</svg>
-						</div>
-						<div class="detail-episode-title">
-							<h1 class="text-base">Episode 1</h1>
-							<h2 class="text-sm opacity-75">Agustus 2, 2023</h2>
+								<p>Bookmark</p>
+							</div>
 						</div>
 					</div>
 				</div>
+			</section>
+
+			<section class="py-4">
+				<div class="container">
+					<div class="w-full h-auto bg-white rounded-md">
+						<ul class="px-4 py-4 flex flex-col gap-4">
+							<li class="text-dark">
+								<h2 class="font-bold text-base">Judul Alternative</h2>
+								<p class="font-semibold text-sm opacity-75">Jujustu Kaisen</p>
+							</li>
+							<li class="text-dark">
+								<h2 class="font-bold text-base">Jumlah Episode</h2>
+								<p class="font-semibold text-sm opacity-75">24</p>
+							</li>
+							<li class="text-dark">
+								<h2 class="font-bold text-base">Tanggal Tayang</h2>
+								<p class="font-semibold text-sm opacity-75">Jul 6, 2023 to ?</p>
+							</li>
+							<li class="text-dark">
+								<h2 class="font-bold text-base">Studio Yang Memproduksi</h2>
+								<p class="font-semibold text-sm opacity-75">MAPPA</p>
+							</li>
+							<li class="text-dark">
+								<h2 class="font-bold text-base">Durasi per Episode</h2>
+								<p class="font-semibold text-sm opacity-75">24 Min.</p>
+							</li>
+							<li class="text-dark">
+								<h2 class="font-bold text-base">Credit</h2>
+								<p class="font-semibold text-sm opacity-75">Oploverz</p>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</section>
+
+			<section class="py-4">
+				<div class="container">
+					<div class="w-full flex flex-wrap gap-2 items-center">
+						<a
+							href="#"
+							class="px-4 py-2 font-semibold text-white text-base bg-red-500 rounded-md hover:bg-dark"
+							>Action</a
+						>
+						<a
+							href="#"
+							class="px-4 py-2 font-semibold text-white text-base bg-red-500 rounded-md hover:bg-dark"
+							>Fantasy</a
+						>
+					</div>
+				</div>
+			</section>
+
+			<section class="py-4">
+				<div class="container">
+					<div class="w-full flex flex-wrap gap-2 items-center">
+						<p class="font-medium text-dark">
+							Anime ini akan menceritakan Satoru Gojou dan Suguru Getou saat
+							masih sekolah. Perpisahan masa lalu antara Gojou dan Getou dalam
+							film terakhirnya akhirnya terungkap.Seri Jujutsu Kaisen berlanjut
+							di musim kedua.
+						</p>
+					</div>
+				</div>
+			</section>
+
+			<section class="py-4">
+				<div class="container">
+					<h1 class="text-4xl font-bold text-dark">
+						<span class="text-orange">Episode</span> List
+					</h1>
+
+					<div class="container-detail-episode">
+						<div class="detail-episode">
+							<div class="detail-episode-icon">
+								<svg
+									xmlns="http://www.w3.org/2000/svg"
+									width="40"
+									height="40"
+									viewBox="0 0 24 24"
+								>
+									<path
+										fill="#ffdc84"
+										d="M8 21v-2H4q-.825 0-1.413-.588T2 17V5q0-.825.588-1.413T4 3h16q.825 0 1.413.588T22 5v12q0 .825-.588 1.413T20 19h-4v2H8Z"
+									/>
+								</svg>
+							</div>
+							<div class="detail-episode-title">
+								<h1 class="text-base">Episode 1</h1>
+								<h2 class="text-sm opacity-75">Agustus 2, 2023</h2>
+							</div>
+						</div>
+						<div class="detail-episode">
+							<div class="detail-episode-icon">
+								<svg
+									xmlns="http://www.w3.org/2000/svg"
+									width="40"
+									height="40"
+									viewBox="0 0 24 24"
+								>
+									<path
+										fill="#ffdc84"
+										d="M8 21v-2H4q-.825 0-1.413-.588T2 17V5q0-.825.588-1.413T4 3h16q.825 0 1.413.588T22 5v12q0 .825-.588 1.413T20 19h-4v2H8Z"
+									/>
+								</svg>
+							</div>
+							<div class="detail-episode-title">
+								<h1 class="text-base">Episode 1</h1>
+								<h2 class="text-sm opacity-75">Agustus 2, 2023</h2>
+							</div>
+						</div>
+						<div class="detail-episode">
+							<div class="detail-episode-icon">
+								<svg
+									xmlns="http://www.w3.org/2000/svg"
+									width="40"
+									height="40"
+									viewBox="0 0 24 24"
+								>
+									<path
+										fill="#ffdc84"
+										d="M8 21v-2H4q-.825 0-1.413-.588T2 17V5q0-.825.588-1.413T4 3h16q.825 0 1.413.588T22 5v12q0 .825-.588 1.413T20 19h-4v2H8Z"
+									/>
+								</svg>
+							</div>
+							<div class="detail-episode-title">
+								<h1 class="text-base">Episode 1</h1>
+								<h2 class="text-sm opacity-75">Agustus 2, 2023</h2>
+							</div>
+						</div>
+						<div class="detail-episode">
+							<div class="detail-episode-icon">
+								<svg
+									xmlns="http://www.w3.org/2000/svg"
+									width="40"
+									height="40"
+									viewBox="0 0 24 24"
+								>
+									<path
+										fill="#ffdc84"
+										d="M8 21v-2H4q-.825 0-1.413-.588T2 17V5q0-.825.588-1.413T4 3h16q.825 0 1.413.588T22 5v12q0 .825-.588 1.413T20 19h-4v2H8Z"
+									/>
+								</svg>
+							</div>
+							<div class="detail-episode-title">
+								<h1 class="text-base">Episode 1</h1>
+								<h2 class="text-sm opacity-75">Agustus 2, 2023</h2>
+							</div>
+						</div>
+						<div class="detail-episode">
+							<div class="detail-episode-icon">
+								<svg
+									xmlns="http://www.w3.org/2000/svg"
+									width="40"
+									height="40"
+									viewBox="0 0 24 24"
+								>
+									<path
+										fill="#ffdc84"
+										d="M8 21v-2H4q-.825 0-1.413-.588T2 17V5q0-.825.588-1.413T4 3h16q.825 0 1.413.588T22 5v12q0 .825-.588 1.413T20 19h-4v2H8Z"
+									/>
+								</svg>
+							</div>
+							<div class="detail-episode-title">
+								<h1 class="text-base">Episode 1</h1>
+								<h2 class="text-sm opacity-75">Agustus 2, 2023</h2>
+							</div>
+						</div>
+						<div class="detail-episode">
+							<div class="detail-episode-icon">
+								<svg
+									xmlns="http://www.w3.org/2000/svg"
+									width="40"
+									height="40"
+									viewBox="0 0 24 24"
+								>
+									<path
+										fill="#ffdc84"
+										d="M8 21v-2H4q-.825 0-1.413-.588T2 17V5q0-.825.588-1.413T4 3h16q.825 0 1.413.588T22 5v12q0 .825-.588 1.413T20 19h-4v2H8Z"
+									/>
+								</svg>
+							</div>
+							<div class="detail-episode-title">
+								<h1 class="text-base">Episode 1</h1>
+								<h2 class="text-sm opacity-75">Agustus 2, 2023</h2>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+		</div>
+		<!-- Android view -->
+
+		<div class="hidden lg:flex justify-center gap-4 px-24">
+			<div>
+				<section
+					class="w-40 lg:w-[20rem] lg:flex h-60 lg:h-[30rem] overflow-hidden rounded-md shadow-md -mt-32 lg:-mt-64"
+				>
+					<img
+						src="https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx145064-5fa4ZBbW4dqA.jpg"
+						alt=""
+						class="w-full h-full object-cover"
+					/>
+				</section>
+				<section class="py-4">
+					<div class="">
+						<div class="flex flex-col gap-4">
+							<div class="flex justify-center items-center font-bold">
+								<div class="detail-dua-bar bg-dark rounded-l-full">
+									<p>Episode 5</p>
+								</div>
+								<div class="detail-dua-bar rounded-r-full">
+									<p class="text-center">On Going</p>
+								</div>
+							</div>
+							<div class="flex justify-center items-center font-bold">
+								<div
+									class="detail-dua-bar bg-main-detail-abu rounded-full flex justify-center gap-2 items-center"
+								>
+									<i class="fa-solid fa-star text-orange"></i>
+									<p>9.0</p>
+								</div>
+							</div>
+							<div class="flex justify-center items-center font-bold">
+								<div
+									class="detail-dua-bar bg-merah rounded-full flex justify-center gap-2 items-center"
+								>
+									<p>Bookmark</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</section>
+
+				<section class="py-4">
+					<div class="">
+						<div class="w-full h-auto bg-white rounded-md">
+							<ul class="px-4 py-4 flex flex-col gap-4">
+								<li class="text-dark">
+									<h2 class="font-bold text-base">Judul Alternative</h2>
+									<p class="font-semibold text-sm opacity-75">Jujustu Kaisen</p>
+								</li>
+								<li class="text-dark">
+									<h2 class="font-bold text-base">Jumlah Episode</h2>
+									<p class="font-semibold text-sm opacity-75">24</p>
+								</li>
+								<li class="text-dark">
+									<h2 class="font-bold text-base">Tanggal Tayang</h2>
+									<p class="font-semibold text-sm opacity-75">
+										Jul 6, 2023 to ?
+									</p>
+								</li>
+								<li class="text-dark">
+									<h2 class="font-bold text-base">Studio Yang Memproduksi</h2>
+									<p class="font-semibold text-sm opacity-75">MAPPA</p>
+								</li>
+								<li class="text-dark">
+									<h2 class="font-bold text-base">Durasi per Episode</h2>
+									<p class="font-semibold text-sm opacity-75">24 Min.</p>
+								</li>
+								<li class="text-dark">
+									<h2 class="font-bold text-base">Credit</h2>
+									<p class="font-semibold text-sm opacity-75">Oploverz</p>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</section>
 			</div>
-		</section>
+
+			<div>
+				<div class="container">
+					<h1 class="text-dark font-bold py-5 text-4xl">
+						Sialan di anime tidak begitu
+					</h1>
+				</div>
+				<section class="py-4">
+					<div class="container">
+						<div class="flex flex-wrap gap-2 items-center">
+							<a
+								href="#"
+								class="px-4 py-2 font-semibold text-white text-base bg-red-500 rounded-md hover:bg-dark"
+								>Action</a
+							>
+							<a
+								href="#"
+								class="px-4 py-2 font-semibold text-white text-base bg-red-500 rounded-md hover:bg-dark"
+								>Fantasy</a
+							>
+						</div>
+					</div>
+				</section>
+				<section class="py-4">
+					<div class="container">
+						<div class="w-full flex flex-wrap gap-2 items-center">
+							<p class="font-medium text-lg text-dark">
+								Anime ini akan menceritakan Satoru Gojou dan Suguru Getou saat
+								masih sekolah. Perpisahan masa lalu antara Gojou dan Getou dalam
+								film terakhirnya akhirnya terungkap.Seri Jujutsu Kaisen
+								berlanjut di musim kedua.
+							</p>
+						</div>
+					</div>
+				</section>
+
+				<section class="py-4">
+					<div class="container">
+						<h1 class="text-4xl font-bold text-dark">
+							<span class="text-orange">Episode</span> List
+						</h1>
+
+						<div class="container-detail-episode">
+							<div class="detail-episode">
+								<div class="detail-episode-icon">
+									<svg
+										xmlns="http://www.w3.org/2000/svg"
+										width="40"
+										height="40"
+										viewBox="0 0 24 24"
+									>
+										<path
+											fill="#ffdc84"
+											d="M8 21v-2H4q-.825 0-1.413-.588T2 17V5q0-.825.588-1.413T4 3h16q.825 0 1.413.588T22 5v12q0 .825-.588 1.413T20 19h-4v2H8Z"
+										/>
+									</svg>
+								</div>
+								<div class="detail-episode-title">
+									<h1 class="text-base">Episode 1</h1>
+									<h2 class="text-sm opacity-75">Agustus 2, 2023</h2>
+								</div>
+							</div>
+						</div>
+					</div>
+				</section>
+			</div>
+		</div>
 
 		<footer class="mt-14 w-full bg-dark relative">
 			<div class="container">
