@@ -31,46 +31,70 @@
 	<body>
 		<header
 			style="background-image: url('../img/background.webp')"
-			class="bg-no-repeat bg-cover bg-center lg:h-screen"
+			class="bg-no-repeat bg-cover bg-center md:h-screen"
 		>
-			<div class="bg-black bg-opacity-75 lg:h-screen">
+			<div class="bg-black bg-opacity-75 md:h-screen">
 				<nav
-					class="hidden lg:flex justify-between items-center text-dark px-4 bg-white"
+					class="hidden lg:flex justify-between items-center text-dark px-8 py-4 border-b-2 border-orange bg-white"
 				>
-					<a href="#">Tsukinime.net</a>
+					<a href="#" class="text-2xl font-bold"
+						><span class="text-orange">Tsukinime</span>.net</a
+					>
 					<ul class="flex gap-4">
-						<li>Menu1</li>
-						<li>Menu1</li>
-						<li>Menu1</li>
-						<li>Menu1</li>
+						<li class="list-menu-desktop menu-active-desktop">
+							<a href="../" class="w-full h-full block">Beranda</a>
+						</li>
+						<li class="list-menu-desktop">
+							<a href="../" class="w-full h-full block">Cari Anime</a>
+						</li>
+						<li class="list-menu-desktop">
+							<a href="../" class="w-full h-full block">Daftar Anime</a>
+						</li>
+						<li class="list-menu-desktop">
+							<a href="../" class="w-full h-full block">Genres</a>
+						</li>
+						<li class="list-menu-desktop">
+							<a href="../" class="w-full h-full block">Bookmark</a>
+						</li>
+						<li class="list-menu-desktop">
+							<a href="../" class="w-full h-full block">Jadwal Rilis Ongoing</a>
+						</li>
+						<li class="list-menu-desktop">
+							<a href="../" class="w-full h-full block">FAQ</a>
+						</li>
+						<li class="list-menu-desktop">
+							<a href="../" class="w-full h-full block">Kontak</a>
+						</li>
 					</ul>
 				</nav>
-				<div class="container pt-4">
+				<div class="container pt-4 md:pt-6">
 					<!-- Nav Mobile -->
 					<nav class="flex items-center justify-between text-white lg:hidden">
 						<div class="flex gap-2">
 							<menu
 								><i
-									class="fa-solid fa-bars font-bold text-xl"
+									class="fa-solid fa-bars font-bold text-xl md:text-2xl"
 									id="hamburger-open"
 								></i
 							></menu>
-							<a href="#" class="text-orange font-bold text-xl"
+							<a href="#" class="text-orange font-bold text-xl md:text-2xl"
 								>Tsukinime<span class="text-white">.net</span></a
 							>
 						</div>
-						<a href="#" class="text-sm">SIGN IN</a>
+						<a href="#" class="text-sm md:text-2xl">SIGN IN</a>
 					</nav>
 					<!-- End Nav Mobile -->
 
-					<section class="py-16 flex justify-between lg:text-center lg:pt-48">
+					<section
+						class="py-16 flex justify-between md:text-center lg:pt-44 md:pt-64"
+					>
 						<main class="text-white">
-							<h1 class="font-bold text-2xl lg:text-4xl">
+							<h1 class="font-bold text-2xl md:text-4xl">
 								Tonton anime favoritmu di
 								<span class="text-orange">Tsukinime</span>
 							</h1>
 							<p
-								class="text-sm py-2 lg:py-8 pb-4 lg:mx-auto lg:w-2/4 lg:text-2xl"
+								class="text-sm py-2 md:py-8 pb-4 lg:mx-auto lg:w-2/4 md:text-2xl"
 							>
 								Fanshare Download Anime Sub Indo Terlengkap dan Terbaru dalam
 								Format Mkv (480p & 720p) dan Mp4 (240p & 360p) + BATCH dengan
@@ -79,7 +103,7 @@
 
 							<a
 								href="#"
-								class="bg-orange hover:bg-dark px-4 py-2 pt-2 lg:text-2xl rounded-sm"
+								class="bg-orange hover:bg-dark px-4 py-2 pt-2 md:text-2xl rounded-sm"
 								>SIGN IN</a
 							>
 						</main>
@@ -92,25 +116,25 @@
 				id="navbar-menu"
 			>
 				<div class="container pt-4">
-					<nav class="flex items-center justify-between text-dark">
+					<nav class="flex items-center justify-between md:py-4 text-dark">
 						<div class="flex gap-2">
 							<menu
 								><i
-									class="fa-solid fa-bars font-bold text-xl"
+									class="fa-solid fa-bars font-bold text-xl md:text-2xl"
 									id="hamburger-close"
 								></i
 							></menu>
-							<a href="#" class="text-orange font-bold text-xl"
+							<a href="#" class="text-orange font-bold text-xl md:text-2xl"
 								>Tsukinime<span class="text-dark">.net</span></a
 							>
 						</div>
-						<a href="#" class="text-sm">SIGN IN</a>
+						<a href="#" class="text-sm md:text-2xl">SIGN IN</a>
 					</nav>
 				</div>
 				<div class="w-full h-1 mt-4 bg-orange"></div>
 
-				<div class="container py-6">
-					<ul class="flex flex-wrap gap-3">
+				<div class="container py-6 md:py-8">
+					<ul class="flex flex-wrap gap-3 md:gap-4">
 						<li class="list-menu menu-active">
 							<a href="../" class="w-full h-full block">Beranda</a>
 						</li>
@@ -140,9 +164,9 @@
 			</nav>
 		</header>
 
-		<section class="my-8">
+		<section class="my-12">
 			<div class="container">
-				<h1 class="text-center text-white text-2xl font-bold">
+				<h1 class="text-center text-white text-2xl md:text-4xl font-bold">
 					<i class="fa-solid fa-fire text-orange"></i>
 					<span class="text-orange">Ongoing</span>
 					<span class="text-dark">Anime</span>
@@ -152,7 +176,7 @@
 					<div class="swiper-wrapper">
 						<div class="swiper-slide">
 							<div class="mt-4">
-								<h1 class="font-semibold -z-10 text-dark text-xl">Senin</h1>
+								<h1 class="label-hari">Senin</h1>
 							</div>
 							<div class="ongoing-grid">
 								<a href="#" class="ongoing-grid-container">
@@ -268,7 +292,7 @@
 						<div class="swiper-slide">
 							<div class="mt-4">
 								<div class="mt-4">
-									<h1 class="font-semibold text-dark text-xl">Selasa</h1>
+									<h1 class="label-hari">Selasa</h1>
 								</div>
 							</div>
 							<div class="ongoing-grid">
@@ -396,7 +420,7 @@
 
 		<section class="my-14">
 			<div class="container">
-				<h1 class="text-center text-white text-2xl font-bold">
+				<h1 class="text-center text-white text-2xl md:text-4xl font-bold">
 					<i class="fa-solid fa-check-to-slot text-red-400"></i>
 					<span class="text-red-400">Baru di</span>
 					<span class="text-dark">Update</span>
@@ -522,16 +546,16 @@
 				<div class="flex justify-center pt-8">
 					<a
 						href="#"
-						class="px-4 py-2 hover:bg-dark font-bold text-white rounded-md bg-red-400"
+						class="px-4 py-2 hover:bg-dark font-bold text-white rounded-md md:text-xl bg-red-400"
 						>Lihat Semua</a
 					>
 				</div>
 			</div>
 		</section>
 
-		<section class="my-14">
+		<section class="my-14 lg:my-16">
 			<div class="container">
-				<h1 class="text-center text-white text-2xl font-bold">
+				<h1 class="text-center text-white text-2xl md:text-4xl font-bold">
 					<i class="fa-solid fa-star text-blue-400"></i>
 					<span class="text-blue-400">Movie</span>
 					<span class="text-dark">Anime</span>
@@ -657,7 +681,7 @@
 				<div class="flex justify-center pt-8">
 					<a
 						href="#"
-						class="px-4 py-2 hover:bg-dark font-bold text-white rounded-md bg-blue-400"
+						class="px-4 py-2 hover:bg-dark font-bold text-white md:text-xl rounded-md bg-blue-400"
 						>Lihat Semua</a
 					>
 				</div>
@@ -666,7 +690,7 @@
 
 		<section class="my-14">
 			<div class="container">
-				<h1 class="text-center text-white text-2xl font-bold">
+				<h1 class="text-center text-white text-2xl md:text-4xl font-bold">
 					<i class="fa-solid fa-mug-saucer text-orange"></i>
 					<span class="text-orange">Completed</span>
 					<span class="text-dark">Anime</span>
@@ -849,7 +873,7 @@
 				<div class="flex justify-center pt-8">
 					<a
 						href="#"
-						class="px-4 py-2 hover:bg-dark font-bold text-white rounded-md bg-orange"
+						class="px-4 py-2 hover:bg-dark font-bold text-white md:text-xl rounded-md bg-orange"
 						>Lihat Semua</a
 					>
 				</div>
@@ -859,8 +883,8 @@
 		<footer class="mt-14 w-full bg-dark relative">
 			<div class="container">
 				<main class="pt-4 pb-16">
-					<h1 class="text-2xl text-orange font-bold">Diclaimer</h1>
-					<p class="font-bold text-white text-[12px] pt-2">
+					<h1 class="text-2xl md:text-4xl text-orange font-bold">Disclaimer</h1>
+					<p class="font-bold text-white text-[12px] md:text-2xl pt-2">
 						Mohon diperhatikan bahwa project yang dibuat hanya merupakan latihan
 						skills dan tidak dimaksudkan untuk tujuan komersial atau penggunaan
 						di luar lingkup akademis. Segala risiko yang timbul akibat
