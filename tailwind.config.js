@@ -21,6 +21,7 @@ module.exports = {
 				"text-abu": "#535F6C",
 				"red-icon": "#F96C6C",
 				oren: "#F0864E",
+				"detail-icon": "#636363",
 			},
 		},
 	},

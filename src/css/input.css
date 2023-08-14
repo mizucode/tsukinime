@@ -116,6 +116,21 @@ body {
 
 @layer components {
 	.detail-dua-bar {
-		@apply w-full h-10  bg-orange flex justify-center items-center text-white;
+		@apply w-full h-12 bg-orange flex justify-center items-center text-white;
+	}
+	.container-detail-episode {
+		@apply py-4 flex flex-col gap-3;
+	}
+	.detail-episode {
+		@apply relative bg-dark hover:bg-orange w-full h-16 rounded-lg flex items-center gap-4 px-2;
+	}
+	.detail-episode-icon {
+		@apply bg-detail-icon w-12 h-12 rounded-lg flex justify-center items-center;
+	}
+	.detail-episode:hover .detail-episode-icon {
+		@apply bg-dark;
+	}
+	.detail-episode-title {
+		@apply font-medium text-white;
 	}
 }
