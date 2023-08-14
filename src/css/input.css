@@ -113,3 +113,9 @@ body {
 		@apply -top-0;
 	}
 }
+
+@layer components {
+	.detail-dua-bar {
+		@apply w-full h-10  bg-orange flex justify-center items-center text-white;
+	}
+}
