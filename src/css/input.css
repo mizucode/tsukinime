@@ -134,3 +134,9 @@ body {
 		@apply font-medium text-white;
 	}
 }
+
+@layer components {
+	.download-a {
+		@apply flex w-full h-full  border-dark border-2 font-bold justify-center items-center text-dark hover:bg-dark hover:text-white;
+	}
+}
