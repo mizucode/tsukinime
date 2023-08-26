@@ -139,4 +139,22 @@ body {
 	.download-a {
 		@apply flex w-full h-full  border-dark border-2 font-bold justify-center items-center text-dark hover:bg-dark hover:text-white;
 	}
+	.responisve-desktop {
+		@apply flex justify-between px-16 pt-6;
+	}
+	.responsive-icon {
+		@apply w-[26px] h-[26px] lg:w-[40px] lg:h-[40px] text-main-detail-abu hover:text-orange;
+	}
+	.responsive-cover {
+		@apply w-40 lg:w-80 lg:h-[32rem]  h-64 overflow-hidden rounded-md;
+	}
+	.judul-episdoe-detail {
+		@apply font-bold text-sm lg:text-2xl;
+	}
+	.judul-episdoe-detail-p {
+		@apply font-semibold text-xs opacity-75 lg:text-xl;
+	}
+	.genre-detail {
+		@apply px-2 py-1 lg:py-2 lg:px-4 font-semibold text-white text-sm lg:text-2xl bg-red-500 rounded-sm lg:rounded-md hover:bg-dark;
+	}
 }
