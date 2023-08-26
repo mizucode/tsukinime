@@ -12,6 +12,7 @@ module.exports = {
 			},
 			colors: {
 				main: "#F4F4F4",
+				"abu-genre": "#E9E9E9",
 				"main-abu": "#F1F1F1",
 				"main-detail-abu": "#BDBDBD",
 				merah: "#8F2020",
